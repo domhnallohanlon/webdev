@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Type of Example</title>
+
+		<!-- Bootstrap CSS -->
+		<link href="http://netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
+
+		<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		<!--[if lt IE 9]>
+			<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+			<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+		<![endif]-->
+	</head>
+	<body>
+		<div class="container">
+			<div class="col-md-6" id="col1" onclick="hello(1)"></div>
+			<div class="col-md-6" id="col2" onclick="hello('c2')"></div>
+			<div class="col-md-6" id="col3" onclick="hello(col3)"></div>
+			<div class="col-md-6" id="col4" onclick="hello('col4')"></div>
+		</div> <!-- end of container -->
+
+		<script>
+			var c1 = document.getElementById('col1');
+			var c2 = document.getElementById('col2');
+			var c3 = document.getElementById('col3');
+			var c4 = document.getElementById('col4');
+
+			var cols = [c1, c2, c3, c4];
+
+			for(var i = 0; i < cols.length; i++){
+				cols[i].innerHTML = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas molestiae distinctio aut, adipisci aliquam doloribus nobis vel repellendus, consequuntur rerum excepturi dolore repellat, nesciunt veniam totam laboriosam quidem assumenda quaerat.";
+			}
+
+			function hello(colName) {
+				var col = colName;
+
+				alert(typeof col);
+			}
+		</script>
+		<!-- jQuery -->
+		<script src="http://code.jquery.com/jquery.js"></script>
+		<!-- Bootstrap JavaScript -->
+		<script src="httpL//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+	</body>
+</html>

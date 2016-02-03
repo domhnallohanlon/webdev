@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Type of Example</title>
+
+		<!-- Bootstrap CSS -->
+		<link href="http://netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
+
+		<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		<!--[if lt IE 9]>
+			<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+			<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+		<![endif]-->
+	</head>
+	<body>
+		<div class="container">
+		<div class="row">
+			<h1 class="text-center">Colour Change on Drop Down!!</h1>
+		</div>
+		<div class="col-md-6" id="myId">
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident quisquam nesciunt ipsa culpa eos. Fugiat accusamus autem quaerat quia, in et hic, quo repellendus eos vero fugit quasi, nulla ab.
+		</div>
+		<div class="col-md-6">
+			<select name="selectColour" id="colourPicker">
+				<option value="black" selected="selected">Black</option>
+				<option value="red">Red</option>
+				<option value="orange">Orange</option>
+				<option value="yellow">Yellow</option>
+				<option value="green">Green</option>
+				<option value="blue">Blue</option>
+			</select>
+		</div>
+	<div class="row">
+		<div class="col-md-6 col-md- offset-3">
+			<select name="bs3_select" id="inputBs3_select" class="form-control" required="required">
+				<option value="">=== Select One ===</option>
+				<option value="1">One</option>
+				<option value="2">Two</option>
+				<option value="3">Three</option>
+			</select>
+		</div>
+	</div>
+		</div> <!-- end of container -->
+
+		<script>
+				var ddMenu = document.getElementById("colourPicker");
+				var myDiv = document.getElementById("myId");
+				var selection;
+
+				ddMenu.onchange = function changeTextColour(){
+					selection = ddMenu.options[ddMenu.selectedIndex].value;
+					myDiv.style.color = selection;
+				};
+		</script>
+		<!-- jQuery -->
+		<script src="http://code.jquery.com/jquery.js"></script>
+		<!-- Bootstrap JavaScript -->
+		<script src="http://netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
+		<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+	</body>
+</html>

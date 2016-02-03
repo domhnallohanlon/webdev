@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Headings</title>
+</head>
+<body>
+	<input type="button" value=" + " onclick="bigger()">
+	<input type="button" value="show" onclick="show()">
+	<input type="button" value=" - " onclick="smaller()">
+
+	<h1 id="hdr"></h1>
+
+<script>
+	var ot = ["<h1>","<h2>","<h3>","<h4>"];
+	var ct = ["</h1>","</h2>","</h3>","</h4>"];
+
+	var i = 0;
+
+	var header = document.getElementById("hdr");
+
+	function show(){
+			header.innerHTML = ot[i] + "Hello World" + ct[i];
+			}
+
+	function bigger(){
+		if(i > 0){
+			i--;
+			header.innerHTML = ot[i] + "Hello World" + ct[i];
+		}
+		else{
+			alert("This is the biggest heading");
+		}
+	}
+
+	function smaller(){
+		if(i < ot.length - 1m){
+			i++;
+			header.innerHTML = ot[i] + "Hello World" + ct[i];
+		}
+		else{
+			alert("This is the smallest heading");
+		}
+	}
+
+</script>
+</body>
+</html>

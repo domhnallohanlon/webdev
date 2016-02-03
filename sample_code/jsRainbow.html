@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>JS Styles</title>
+</head>
+<body>
+	<h1 id="hdr">Colourful Text</h1>
+	<input type="button" value="Change Colours" onclick="colourChanger()">
+
+
+<script>
+
+	var counter = 0;
+	var i = 0;
+
+	function colourChanger() {
+		var elem = document.getElementById("hdr");
+
+		var colours = ["Red", "Orange", "Yellow", "Green", "Blue", "Purple"];
+
+		//uses external variable to increment through the array, one colour at a time.
+		// elem.style.color = colours[counter];
+		// counter++;
+		// console.log("Colour " + counter +": " + colours[counter]);
+
+		//outputs ALL the colours at once
+		//for(var i = 0; i < colours.length; i++){
+			if(i < colours.length){
+			elem.style.color = colours[i];
+			console.log("Colour " + i +": " + colours[i]);
+			i++;
+			}
+			else{
+				i = 0;
+				elem.style.color = colours[i];
+				console.log("Colour " + i +": " + colours[i]);
+				i++;
+			}
+		//}
+
+	}
+</script>
+</body>
+</html>
