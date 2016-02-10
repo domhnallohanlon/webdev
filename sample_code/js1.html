@@ -1,12 +1,26 @@
 <!DOCTYPE html>
 <html>
+<head>
+	<title>Creating Dialogs</title>
+</head>
 <body>
 
-<h1>My First Web Page</h1>
-<p>My first paragraph.</p>
+<a href="#" onClick="sayHello()">Say Hello</a>
 
-<script>
-document.write(5 + 6);
+<br/>
+<br/>
+
+<button onClick="disBonjour()">Say Hello in another language</button>
+
+<script type="text/javascript">
+function sayHello(){
+	alert("Hello World!");
+}
+
+function disBonjour(){
+	alert("Bonjour le Monde!");
+}
+
 </script>
 
 </body>
