@@ -118,9 +118,17 @@
 
 				<div class="collapse" id="src1">
 				  <div class="well">
-				    <pre data-src="sample_code/page1.html">
+				    <pre data-src="sample_code/page1.html" id="cp1">
 
 				    </pre>
+						<button type="button" class="btn btn-info clipboardjs" data-clipboard-action="copy" data-clipboard-target="#cp1">
+							<i class="fa fa-clipboard"> </i>
+							Copy
+				  	</button>
+						<a href="sample_code/page1.html" class="btn btn-info" download>
+							<i class="fa fa-download"> </i>
+							Download
+				  	</a>
 				  </div>
 				</div>
 
@@ -141,11 +149,11 @@
 				    </div>
 				  </div>
 				</div>
-			</div> <!-- end of row 1 -->
+			</div> <!-- end of row 1: basic elements -->
 			<div class="row">
-				<h3>Example 2: Forms</h3>	
+				<h3>Example 2: Text and Images</h3>	
 				<p>
-					Even if you don't know what the individual elements are called, you are already familiar with HTML forms. They contain elements like buttons and text boxes for gathering user inputs. 
+					Once you've got to grips with opening tags, closing tags, nesting tags and tag attributes it's time to put them into practice. In this section you will  
 				</p>
 				<!-- Button trigger modal -->
 				<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#pre2">
@@ -156,13 +164,21 @@
 				  View Source Code
 				</button>
 
-				<a href="sample_code/formElements.html" target="_blank" class="btn btn-primary btn-lg">Open in New Tab</a>
+				<a href="sample_code/formattingText.html" target="_blank" class="btn btn-primary btn-lg">Open in New Tab</a>
 
 				<div class="collapse" id="src2">
-				  <div class="well">
-				    <pre data-src="sample_code/formElements.html">
+				  <div class="well" >
+				    <pre data-src="sample_code/formattingText.html" id="cp2">
 
 				    </pre>
+						<button type="button" class="btn btn-info clipboardjs" data-clipboard-action="copy" data-clipboard-target="#cp2">
+							<i class="fa fa-clipboard"> </i>
+							Copy
+				  	</button>
+						<a href="sample_code/formattingText.html" class="btn btn-info" download>
+							<i class="fa fa-download"> </i>
+							Download
+				  	</a>				    
 				  </div>
 				</div>
 
@@ -172,7 +188,7 @@
 				    <div class="modal-content">
 				      <div class="modal-header">
 				        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-				        <h4 class="modal-title" id="myModalLabel">Domhnall's Page</h4>
+				        <h4 class="modal-title" id="myModalLabel">Text and Images</h4>
 				      </div>
 				      <div class="modal-body" id="ex2">
 								
@@ -183,7 +199,57 @@
 				    </div>
 				  </div>
 				</div>
-			</div> <!-- end of row 2 -->
+			</div> <!-- end of row 2: text and images -->
+			<div class="row">
+				<h3>Example 3: Forms</h3>	
+				<p>
+					Even if you don't know what the individual elements are called, you are already familiar with HTML forms. They make up basically every sign up page, log in dialog and e-commerce checkout that you've ever seen. Web forms contain elements like buttons and text boxes for gathering user inputs. 
+				</p>
+				<!-- Button trigger modal -->
+				<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#pre3">
+				  Preview this Example
+				</button>
+
+				<button class="btn btn-primary btn-lg view-sauce" type="button" data-toggle="collapse" data-target="#src3" aria-expanded="false" aria-controls="src2">
+				  View Source Code
+				</button>
+
+				<a href="sample_code/formElements.html" target="_blank" class="btn btn-primary btn-lg">Open in New Tab</a>
+
+				<div class="collapse" id="src3">
+				  <div class="well">
+				    <pre data-src="sample_code/formElements.html" id="cp3">
+
+				    </pre>
+						<button type="button" class="btn btn-info clipboardjs" data-clipboard-action="copy" data-clipboard-target="#cp3">
+							<i class="fa fa-clipboard"> </i>
+							Copy
+				  	</button>
+						<a href="sample_code/formElements.html" class="btn btn-info" download>
+							<i class="fa fa-download"> </i>
+							Download
+				  	</a>					
+				  </div>
+				</div>
+
+				<!-- Modal -->
+				<div class="modal fade" id="pre3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+				  <div class="modal-dialog" role="document">
+				    <div class="modal-content">
+				      <div class="modal-header">
+				        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+				        <h4 class="modal-title" id="myModalLabel">Form Elements</h4>
+				      </div>
+				      <div class="modal-body" id="ex3">
+								
+				      </div>
+				      <div class="modal-footer">
+				        <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+				      </div>
+				    </div>
+				  </div>
+				</div>
+			</div> <!-- end of row 3: forms -->
 		</div> <!-- end of container -->
 
 		<!-- jQuery -->
@@ -200,7 +266,8 @@
 		<script> 
     $(function(){
       $("#ex1").load("sample_code/page1.html"); 
-      $("#ex2").load("sample_code/formElements.html"); 
+      $("#ex2").load("sample_code/formattingText.html"); 
+      $("#ex3").load("sample_code/formElements.html");
     });
 
 	$('.view-sauce').click(function(){
@@ -215,5 +282,19 @@
 		}
 	});
     </script>
+
+    <script src="js/clipboard.min.js"></script>
+		<!-- <script src="js/tooltips.js"></script> -->
+    <script>
+    var clipboard = new Clipboard('.clipboardjs');
+
+    clipboard.on('success', function(e) {
+        console.log(e);
+    });
+
+    clipboard.on('error', function(e) {
+        console.log(e);
+    });
+    </script>    
 	</body>
 </html>
