@@ -1,0 +1,19 @@
+.banner{
+	width: 95%;
+	background-image: url("../img/coffee.jpg");
+	background-size: cover;
+	padding-left: 2.5%;
+	height: 500px;
+}
+
+.body{
+	width: 95%;
+	padding-left: 2.5%;
+	background-color: green;
+}
+
+.footer{
+	width: 95%;
+	padding-left: 2.5%
+	background-color: #a9a9a9;
+}
