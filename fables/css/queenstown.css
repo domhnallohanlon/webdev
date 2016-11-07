@@ -1,0 +1,80 @@
+/*
+Theme from Typespiration
+http://typespiration.com/design/queenstown/
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Amaranth:400');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,700');
+
+h1 {
+	color: #111;
+	font-family: 'Amaranth';
+	font-size: 60px;
+	font-weight: 900;
+	line-height: 60px;
+	margin-bottom: 60px;
+	padding-left: 100px;
+	position: relative;
+}
+
+h1:before {
+	background: #111;
+	content: '';
+	display: block;
+	height: 60px;
+	left: 0px;
+	position: absolute;
+	top: 10px;
+	width: 6px;
+}
+
+p {
+	color: #444;
+	font-family: 'Open Sans';
+	font-size: 18px;
+	font-weight: 500;
+	line-height: 36px;
+	text-indent: 36px;
+	margin-left: 100px;
+}
+
+a {
+	color: #0abfdc;	
+	font-weight: bold;
+}
+
+a:hover {
+	color: #111;
+}
+
+.nav ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #0abfdc;
+}
+
+li {
+    float: right;
+    font-family: 'Amaranth';
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    border-left: 5px solid #0abfdc;
+}
+
+li a:hover {
+    border-left: 5px solid #111;
+    color: #111;
+}
+
+.active{
+	border-left: 5px solid #111;
+	color: #111;
+}

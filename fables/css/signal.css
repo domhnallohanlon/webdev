@@ -1,0 +1,80 @@
+/*
+Theme from Typespiration
+http://typespiration.com/design/the-signal/
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Cormorant+Infant:700,700italic');
+@import url('https://fonts.googleapis.com/css?family=Lato:400,400italic,700');
+
+body{
+	background: #313943;
+}
+
+h1 {
+	color: #fff;
+	font-family: 'Cormorant Infant';
+	font-size: 48px;
+	font-weight: 700;
+	line-height: 72px;
+	letter-spacing: -1px;
+	margin-bottom: 48px;
+	text-align: center;
+}
+
+h1:after {
+	color: #1fcfcb;
+	display: block;
+	content: '. . .';
+	font-size: 26px;
+	line-height: 24px;
+	height: 24px;
+	margin: 48px auto;
+}
+
+p {
+	color: #bbc8d8;
+	font-family: 'Lato';
+	font-size: 18px;
+	font-weight: 500;
+	line-height: 36px;
+	margin: 36px;
+	text-align: left;
+}
+
+a {
+	color: #1fcfcb;	
+}
+
+a:hover {
+	color: #fff;
+}
+.nav ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #1fcfcb;
+}
+
+li {
+    float: right;
+    font-family: 'Cormorant Infant';
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #bbc8d8;
+    color: #313943;
+}
+
+.active{
+    background-color: #bbc8d8;
+    color: #313943;
+}

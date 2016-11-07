@@ -1,0 +1,88 @@
+/*
+Theme from Typespiration
+http://typespiration.com/design/the-envelope/
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Cormorant+Garamond:400,400italic,700,700italic');
+
+body{
+	background: #1d191f;
+}
+
+h1 {
+	color: #fff;
+	font-family: 'Cormorant Garamond';
+	border-bottom: 3px solid #e66c7e;
+	font-size: 36px;
+	font-weight: 400;
+	line-height: 72px;
+	letter-spacing: 35px;
+	margin-bottom: 57px;
+	text-align: center;
+	text-indent: 24px;
+	text-transform: uppercase;
+}	
+
+p {
+	color: #fff;
+
+	font-family: 'Cormorant Garamond';
+	font-size: 18px;
+	font-style: italic;
+	font-weight: 400;
+	line-height: 48px;
+	max-width: 640px;
+	margin: 0 auto 48px;
+	text-align: left;
+}
+
+a {
+	color: #e66c7e;	
+	border-bottom: 2px solid #e66c7e;
+	font-family: 'Cormorant Garamond';
+	font-size: 12px;
+	font-weight: 700;
+	letter-spacing: 3px;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+a:hover {
+	color: #fff;
+	border-bottom: 2px dotted #fff;
+}	
+
+.nav ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #e66c7e;
+}
+
+li {
+    float: right;
+    font-family: 'Cormorant Garamond';
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #bbc8d8;
+    color: #1d191f;
+    border-bottom: 3px dotted #e66c7e;
+    border-top: 3px dotted #e66c7e;
+}
+
+.active{
+    background-color: #bbc8d8;
+    color: #1d191f;
+    border-bottom: 3px dotted #e66c7e;
+    border-top: 3px dotted #e66c7e;
+}	

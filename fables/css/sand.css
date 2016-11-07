@@ -1,0 +1,70 @@
+/*
+Theme from Typespiration
+http://typespiration.com/design/sand/
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Expletus+Sans:400,700');
+@import url('https://fonts.googleapis.com/css?family=Dosis:400,700');
+
+body{
+	background: #ffdb74;
+}
+
+h1 {
+	color: #252010;
+	font-family: 'Expletus Sans';
+	font-size: 48px;
+	font-weight: 400;
+	line-height: 60px;
+	margin-bottom: 48px;
+	letter-spacing: -1px;
+	text-transform: none;
+}
+
+p {
+	color: #40371D;
+	font-family: 'Dosis';
+	font-size: 22px;
+	font-weight: 400;
+	line-height: 36px;
+	margin-bottom: 36px;
+}
+
+a {
+	color: #5cd8b6;	
+}
+
+a:hover {
+	color: #fff
+}
+
+.nav ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #252010;
+}
+
+li {
+    float: right;
+    font-family: 'Expletus Sans';
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111;
+    color: #5cd8b6;
+}
+
+.active {
+    background-color: #111;
+    color: #5cd8b6;
+}

@@ -96,9 +96,9 @@
 			<div class="row">
 				<h2 class="text-center">CSS</h2>
 				CSS, or Cascading Style Sheets are what make the web look great (and sometimes terrible too!). CSS elements allow you to change the properties of a single element, or a whole variety of elements, all from one easy to manage style sheet. 
-			</div> <!-- end of row -->
+			</div> <!-- end of row 1: intro -->
 			<div class="row">
-				<h3>Example 1 revisited</h3>
+				<h3>Example 4: Selectors.</h3>
 				<p>This is the same markup as example 1 from the previous section, but it has been styled using CSS. Although the syntax of CSS is quite different from HTML, it is still fairly simple and with a bit of practice you will be able to style all the elements on your page.</p>
 				<!-- Button trigger modal -->
 				<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#pre1">
@@ -113,9 +113,15 @@
 
 				<div class="collapse" id="src1">
 				  <div class="well">
-				    <pre data-src="sample_code/page1css.html">
+				    <pre data-src="sample_code/page1css.html" id="cp1">
 
 				    </pre>
+					<button type="button" class="btn btn-info clipboardjs" data-clipboard-action="copy" data-clipboard-target="#cp2">
+						<i class="fa fa-clipboard"> </i> Copy
+				  	</button>
+					<a href="sample_code/page1css.html" class="btn btn-info" download>
+						<i class="fa fa-download"> </i>	Download
+				  	</a>
 				  </div>
 				</div>
 
@@ -125,18 +131,49 @@
 				    <div class="modal-content">
 				      <div class="modal-header">
 				        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-				        <h4 class="modal-title" id="myModalLabel">Domhnall's Page</h4>
+				        <h4 class="modal-title" id="myModalLabel">CSS Example 1</h4>
 				      </div>
 				      <div class="modal-body" id="ex1">
 								
 				      </div>
-<!-- 				      <div class="modal-footer">
+				      <div class="modal-footer">
 				        <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
-				      </div> -->
+				      </div>
 				    </div>
 				  </div>
 				</div>
-			</div>
+			</div> <!-- end of row 2: example 4 selectors -->
+			<div class="row">
+				<h3>Example 5: Colours/Colors</h3>
+				<p>
+					In this example we look at how colours are represented in HTML and CSS as well as a few tools for generating nice colour palettes. 
+				</p>
+			</div> <!-- end of row 3: example 5 colours -->
+			<div class="row">
+				<h3>Example 6: Importing Webfonts</h3>
+				<p>
+					How to use fonts from Google Fonts and icons from Font Awesome.
+				</p>
+			</div> <!-- end of row 4: example 6 webfonts -->
+			<div class="row">
+				<h3><em>Exercise 2: Aesop's Fables</em></h3>
+				<p>
+				Some nice examples from Typespiration.
+				<a href="fables/fable1.html" target="_blank">Check them out.</a>
+				</p>
+			</div> <!-- end of row 5: exercise 2 Aesop's fables -->
+			<div class="row">
+				<h3>Example 7: The Box Model</h3>
+				<p>
+					Understanding the box model
+				</p>
+			</div> <!-- end of row 6:  eg 7 the box model -->
+			<div class="row">
+				<h3><em>Exercise 3: Inspirational Quotes</em></h3>
+				<p>
+					Combining positioning, webfonts, rgba and more to create a nice deck of inspirational quotes. 
+				</p>
+			</div> <!-- end of row 7: ex 3, inspirational quotes -->
 		</div> <!-- end of container -->
 
 		<!-- jQuery -->
@@ -152,6 +189,7 @@
 		</script>
 		<script> 
     $(function(){
+    	//version 2 of this page has more specific selectors so that only the elements in the modal are styled
       $("#ex1").load("sample_code/page1css2.html"); 
     });
     </script> 
@@ -168,5 +206,20 @@
 		}
 	});
     </script>
+
+    <script src="js/clipboard.min.js"></script>
+		<!-- <script src="js/tooltips.js"></script> -->
+    <script>
+    var clipboard = new Clipboard('.clipboardjs');
+
+    clipboard.on('success', function(e) {
+        console.log(e);
+    });
+
+    clipboard.on('error', function(e) {
+        console.log(e);
+    });
+    </script>    
+
 	</body>
 </html>
