@@ -100,60 +100,162 @@
 			<div class="row">
 				<h3>Example 4: Selectors.</h3>
 				<p>This is the same markup as example 1 from the previous section, but it has been styled using CSS. Although the syntax of CSS is quite different from HTML, it is still fairly simple and with a bit of practice you will be able to style all the elements on your page.</p>
-				<!-- Button trigger modal -->
-				<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#pre1">
-				  Preview this Example
-				</button>
+				<div class="col-md-12">					
+					<!-- Button trigger modal -->
+					<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#pre1">
+					  Preview Example 4
+					</button>
 
-				<button class="btn btn-primary btn-lg view-sauce" type="button" data-toggle="collapse" data-target="#src1" aria-expanded="false" aria-controls="src1">
-				  View Source Code
-				</button>
+					<button class="btn btn-primary btn-lg view-sauce" type="button" data-toggle="collapse" data-target="#src1" aria-expanded="false" aria-controls="src1">
+					  View Source Code
+					</button>
 
-				<a href="sample_code/page1css.html" target="_blank" class="btn btn-primary btn-lg">Open in New Tab</a>
+					<a href="sample_code/page1css.html" target="_blank" class="btn btn-primary btn-lg">Open in New Tab</a>
 
-				<div class="collapse" id="src1">
-				  <div class="well">
-				    <pre data-src="sample_code/page1css.html" id="cp1">
+					<div class="collapse" id="src1">
+					  <div class="well">
+					    <pre data-src="sample_code/page1css.html" id="cp1">
 
-				    </pre>
-					<button type="button" class="btn btn-info clipboardjs" data-clipboard-action="copy" data-clipboard-target="#cp2">
-						<i class="fa fa-clipboard"> </i> Copy
-				  	</button>
-					<a href="sample_code/page1css.html" class="btn btn-info" download>
-						<i class="fa fa-download"> </i>	Download
-				  	</a>
-				  </div>
+					    </pre>
+						<button type="button" class="btn btn-info clipboardjs" data-clipboard-action="copy" data-clipboard-target="#cp2">
+							<i class="fa fa-clipboard"> </i> Copy
+					  	</button>
+						<a href="sample_code/page1css.html" class="btn btn-info" download>
+							<i class="fa fa-download"> </i>	Download
+					  	</a>
+					  </div>
+					</div>
+
+					<!-- Modal -->
+					<div class="modal fade" id="pre1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+					  <div class="modal-dialog" role="document">
+					    <div class="modal-content" style="background-color: gray">
+					      <div class="modal-header">
+					        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					        <h4 class="modal-title" id="myModalLabel" >CSS Example 4</h4>
+					      </div>
+					      <div class="modal-body" id="ex4">
+									
+					      </div>
+					      <div class="modal-footer" >
+					        <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+					      </div>
+					    </div>
+					  </div>
 				</div>
-
-				<!-- Modal -->
-				<div class="modal fade" id="pre1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-				  <div class="modal-dialog" role="document">
-				    <div class="modal-content">
-				      <div class="modal-header">
-				        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-				        <h4 class="modal-title" id="myModalLabel">CSS Example 1</h4>
-				      </div>
-				      <div class="modal-body" id="ex1">
-								
-				      </div>
-				      <div class="modal-footer">
-				        <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
-				      </div>
-				    </div>
-				  </div>
 				</div>
 			</div> <!-- end of row 2: example 4 selectors -->
 			<div class="row">
 				<h3>Example 5: Colours/Colors</h3>
 				<p>
-					In this example we look at how colours are represented in HTML and CSS as well as a few tools for generating nice colour palettes. 
+					In this example we look at how colours are represented in HTML and CSS as well as a few tools for generating nice colour palettes. In the examples below you will see some text coloured with hexadecimal and some divs coloured in using RGBa. 
 				</p>
+				<p>
+					For more colourful ideas for your own website check out <a href="https://materialpalette.com" target="_blank">Material Palette</a> or try <a href="https://coolors.co" target="_blank">Coolors.</a>
+				</p>
+				<!-- Start Controls -->
+				<div class="col-md-12">	
+					<!-- Toggle Preview Modal -->
+					<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#example5">
+					  Preview Example 5
+					</button>
+					
+					<!-- Toggle Code Well -->
+					<button class="btn btn-primary btn-lg view-sauce" type="button" data-toggle="collapse" data-target="#source5" aria-expanded="false" aria-controls="source5">
+					  View Source Code
+					</button>
+					
+					<!-- Open in New Tab -->
+					<a href="sample_code/ex5.html" target="_blank" class="btn btn-primary btn-lg">Open in New Tab</a>
+					
+					<!-- Code Well -->
+					<div class="collapse" id="source5">
+					  <div class="well" >
+					    <pre data-src="sample_code/ex5.html" id="clipboard5">
+
+					    </pre>
+						<button type="button" class="btn btn-info clipboardjs" data-clipboard-action="copy" data-clipboard-target="#clipboard5">
+							<i class="fa fa-clipboard"> </i> Copy
+					  	</button>
+						<a href="sample_code/ex5.html" class="btn btn-info" download>
+							<i class="fa fa-download"> </i>	Download
+					  	</a>				    
+					  </div>
+					</div>
+
+					<!-- Modal -->
+					<div class="modal fade" id="example5" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+					  <div class="modal-dialog" role="document">
+					    <div class="modal-content" style="background-color: #f5f5f5">
+					      <div class="modal-header">
+					        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					        <h4 class="modal-title" id="myModalLabel">Colours</h4>
+					      </div>
+					      <div class="modal-body" id="ex5">
+									
+					      </div>
+					      <div class="modal-footer">
+					        <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+					      </div>
+					    </div>
+					  </div>
+					</div>
+				</div> <!-- end of controls -->
 			</div> <!-- end of row 3: example 5 colours -->
+			
 			<div class="row">
 				<h3>Example 6: Importing Webfonts</h3>
 				<p>
-					How to use fonts from Google Fonts and icons from Font Awesome.
+					This example demonstrates how to use fonts from Google Fonts and icons from Font Awesome. These are just two popular providers, but the steps for using other services is broadly the same.
 				</p>
+				<!-- Start Controls -->
+				<div class="col-md-12">	
+					<!-- Toggle Preview Modal -->
+					<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#example6">
+					  Preview Example 6
+					</button>
+					
+					<!-- Toggle Code Well -->
+					<button class="btn btn-primary btn-lg view-sauce" type="button" data-toggle="collapse" data-target="#source6" aria-expanded="false" aria-controls="source6">
+					  View Source Code
+					</button>
+					
+					<!-- Open in New Tab -->
+					<a href="sample_code/ex6.html" target="_blank" class="btn btn-primary btn-lg">Open in New Tab</a>
+					
+					<!-- Code Well -->
+					<div class="collapse" id="source6">
+					  <div class="well" >
+					    <pre data-src="sample_code/ex6.html" id="clipboard6">
+
+					    </pre>
+						<button type="button" class="btn btn-info clipboardjs" data-clipboard-action="copy" data-clipboard-target="#clipboard6">
+							<i class="fa fa-clipboard"> </i> Copy
+					  	</button>
+						<a href="sample_code/ex6.html" class="btn btn-info" download>
+							<i class="fa fa-download"> </i>	Download
+					  	</a>				    
+					  </div>
+					</div>
+
+					<!-- Modal -->
+					<div class="modal fade" id="example6" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+					  <div class="modal-dialog" role="document">
+					    <div class="modal-content" style="background-color: #f5f5f5">
+					      <div class="modal-header">
+					        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					        <h4 class="modal-title" id="myModalLabel">Web Fonts</h4>
+					      </div>
+					      <div class="modal-body" id="ex6">
+									
+					      </div>
+					      <div class="modal-footer">
+					        <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+					      </div>
+					    </div>
+					  </div>
+					</div>
+				</div> <!-- end of controls -->				
 			</div> <!-- end of row 4: example 6 webfonts -->
 			<div class="row">
 				<h3><em>Exercise 2: Aesop's Fables</em></h3>
@@ -171,7 +273,7 @@
 			<div class="row">
 				<h3><em>Exercise 3: Inspirational Quotes</em></h3>
 				<p>
-					Combining positioning, webfonts, rgba and more to create a nice deck of inspirational quotes. 
+					Combining positioning, webfonts, rgba and more to create a nice deck of <a href="quotes/quotes.html" target="_blank">inspirational quotes.</a> 
 				</p>
 			</div> <!-- end of row 7: ex 3, inspirational quotes -->
 		</div> <!-- end of container -->
@@ -190,7 +292,9 @@
 		<script> 
     $(function(){
     	//version 2 of this page has more specific selectors so that only the elements in the modal are styled
-      $("#ex1").load("sample_code/page1css2.html"); 
+    	$('#ex4').load("sample_code/page1css2.html");
+      	$("#ex5").load("sample_code/ex5_2.html"); 
+      	$("#ex6").load("sample_code/ex6_2.html"); 
     });
     </script> 
     <script>

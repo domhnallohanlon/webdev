@@ -1,0 +1,100 @@
+<html>
+<head>
+		
+</head>
+<body>
+				<!-- Start of Controls -->
+				<div class="col-md-12">	
+					<!-- Toggle Preview Modal -->
+					<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#example1">
+					  Preview this Example
+					</button>
+					
+					<!-- Toggle Code Well -->
+					<button class="btn btn-primary btn-lg view-sauce" type="button" data-toggle="collapse" data-target="#source1" aria-expanded="false" aria-controls="source1">
+					  View Source Code
+					</button>
+
+					<a href="sample_code/formattingText.html" target="_blank" class="btn btn-primary btn-lg">Open in New Tab</a>
+					
+					<!-- Code Well -->
+					<div class="collapse" id="source1">
+					  <div class="well" >
+					    <pre data-src="sample_code/" id="clipboard1">
+
+					    </pre>
+						<button type="button" class="btn btn-info clipboardjs" data-clipboard-action="copy" data-clipboard-target="#clipboard1">
+							<i class="fa fa-clipboard"> </i> Copy
+					  	</button>
+						<a href="sample_code/formattingText.html" class="btn btn-info" download>
+							<i class="fa fa-download"> </i>	Download
+					  	</a>				    
+					  </div>
+					</div>
+
+					<!-- Modal -->
+					<div class="modal fade" id="example1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+					  <div class="modal-dialog" role="document">
+					    <div class="modal-content">
+					      <div class="modal-header">
+					        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					        <h4 class="modal-title" id="myModalLabel">Text and Images</h4>
+					      </div>
+					      <div class="modal-body" id="ex1">
+									
+					      </div>
+					      <div class="modal-footer">
+					        <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+					      </div>
+					    </div>
+					  </div>
+					</div>
+				</div> 
+				<!-- End of Controls -->
+
+<!-- jQuery -->
+<script src="http://code.jquery.com/jquery.js"></script>
+<!-- Bootstrap JavaScript -->
+<script src="http://netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+<!-- syntax highlighting -->
+<script src="js/prism.js"></script>
+
+<!-- Example Modals -->
+<script> 
+    $(function(){
+    	//version 2 of this page has more specific selectors so that only the elements in the modal are styled
+      $("#ex1").load("sample_code/page1css2.html"); 
+    });
+</script> 
+
+<!-- Code Wells -->
+<script>
+    		$('.view-sauce').click(function(){
+		var $this = $(this);
+		$this.toggleClass('view-sauce');
+		if($this.hasClass('view-sauce')){
+			$this.text('View Source Code');	
+			$this.toggleClass('btn-warning');		
+		} else {
+			$this.text('Hide Source Code');
+			$this.toggleClass('btn-warning');
+		}
+	});
+    </script>
+
+<!-- Copy to clipboard -->
+<script src="js/clipboard.min.js"></script>
+<script>
+    var clipboard = new Clipboard('.clipboardjs');
+
+    clipboard.on('success', function(e) {
+        console.log(e);
+    });
+
+    clipboard.on('error', function(e) {
+        console.log(e);
+    });
+</script>    				
+
+</body>
+</html>

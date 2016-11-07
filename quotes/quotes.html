@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<head>
+	<title>Quotations</title>
+	<style>
+		html,body{
+			height: 100%;
+			margin: 0;
+		}
+
+		div{
+			width: 100%;
+			height: 100%;
+			background-color: #ddd;
+			position:relative;
+		}
+
+		blockquote{
+			font-size: 48px;
+			font-weight: bold;
+		    position: absolute;
+		    top: 0;
+		    bottom: 0;
+		    left: 0;
+		    right: 0;
+		    width: 40%;
+		    height: 30%;
+		    margin: auto;
+		    background-color: rgba(25,25,25,.5);
+		    padding: 20px;
+		}
+
+		h3{
+			text-align: right;
+			font-size: 30px
+		}
+
+		.quote1{
+			font-family: Verdana;
+			background-color: pink;
+			background-image: url(img/canyon.jpeg);
+			background-size: cover;
+			color: white
+		}
+
+		.quote2{
+			font-family: Georgia;
+			background-color: lightgreen;
+			background-image: url(img/stars.jpeg);
+			background-size: cover;
+			color: white;
+		}
+
+		.quote3{
+			font-family: cursive;
+			background-color: lightyellow;
+			background-image: url(img/bridge.jpeg);
+			background-size: cover;
+			color: white
+		}
+</style>
+</head>
+<body>
+	<div class="quote1">
+		<blockquote>Do or do not,<br/>
+			There is no try.<br/>
+			<h3>Yoda</h3>
+		</blockquote>
+	</div>
+	<div class="quote2">
+		<blockquote>
+			Toto, I've a feeling we're not in Kansas anymore.
+			<h3>Dorothy</h3>
+		</blockquote>
+	</div>
+	<div class="quote3">
+		<blockquote>
+			Elementary, my dear Watson.
+			<h3>Sherlock</h3>
+		</blockquote>
+	</div>
+</body>
+</html>
