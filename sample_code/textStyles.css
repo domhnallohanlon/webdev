@@ -1,0 +1,96 @@
+p{
+	/*text-align: center;*/
+	text-align: left;
+	/*text-align: right;*/
+	/*text-align: justify;*/
+
+	/*text-transform: uppercase;*/
+	/*text-transform: lowercase;*/
+	/*text-transform: capitalize;*/
+
+	/*text-indent: 3em;*/
+	text-indent: 50px;
+
+	line-height: 1.2;
+
+	font-size: 20px;
+	font-weight: bold;
+	font-style: italic;
+	font-variant: small-caps;
+	font-family: 'Arial', sans-serif;
+}
+
+a{
+	background-color: black;
+	color: yellow;
+	text-decoration: none;
+	/*text-decoration: underline;*/
+	/*text-decoration: overline;*/
+	/*text-decoration: line-through;*/
+}
+
+a:hover{
+	background-color: yellow;
+	color: black;
+	/*text-decoration: none;*/
+	text-decoration: underline;
+	/*text-decoration: overline;*/
+	/*text-decoration: line-through;*/
+}
+
+body{
+	background-color: #fff;
+	background-image: url("../images/green_grad_tiny.png");
+	background-repeat: repeat-y;
+	background-attachment: top;
+	/*background-position: top right*/
+	/*background-size: cover;*/
+}
+
+.row{
+	width: 100%;
+	position: relative;
+	/*display: block;*/
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.two50{
+    width: 250px;
+    height: 250px;
+    border: 25px solid green;
+    padding: 25px;
+    margin: 25px;
+    display: block;
+    float: left;
+    color: black;
+	text-align: center;
+}
+
+.two50:after{
+	content: "Content: 250 x 250 \A Margin: 25px \a Border: 25px \a Padding: 25px \a Size: 400 x 400";
+	white-space: pre;
+
+}
+
+.one50{
+    width: 150px;
+    height: 150px;
+    border: 25px dotted red;
+    padding: 25px;
+    margin: 25px;
+    display: block;
+    float: left;
+    color: black;
+	text-align: center;
+}
+
+.one50:after{
+	content: "Content: 150 x 150 \A Margin: 25px \a Border: 25px \a Padding: 25px \a Size: 300 x 300";
+	white-space: pre;
+
+}
