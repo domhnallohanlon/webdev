@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Vertical Navigation step-by-step</title>
+	<style>
+		.nav{
+			list-style-type: none;
+		}
+
+		.nav > li a{
+			display: block;
+			width: 100px;
+			background-color: #00B8B8;
+			color: #FFF;
+			font-size: 20px;
+			text-decoration: none;
+			padding: 5px;
+		}
+
+		.nav > li a:hover{
+			display: block;
+			width: 100px;
+			background-color: #FFAA00;
+			color: #FFF;
+			font-size: 20px;
+		}
+
+		.horizontal > li a{
+			float: left;
+			background-color: #FFAA00;
+		}
+
+		.horizontal > li a:hover{
+			background-color: #FF0000;
+		}
+	</style>
+</head>
+<body>
+	<h2>Navigation in 5 Easy Steps</h2>
+	<p> This page demonstrates how to create a CSS based navigation bar using HTML lists and a few simple styles.</p>
+	<h3>Step 1: Create a List</h3>
+	<ul>
+		<li>Home</li>
+		<li>About</li>
+		<li>Store</li>
+		<li>Blog</li>
+	</ul>
+
+<h3>Step 2: Link list items</h3>
+	<ul>
+		<li><a href="#">Home</a></li>
+		<li><a href="#">About</a></li>
+		<li><a href="#">Store</a></li>
+		<li><a href="#">Blog</a></li>
+	</ul>
+
+<h3>Step 3: Remove bullets</h3>
+	<ul style="list-style-type: none;">
+		<li><a href="#">Home</a></li>
+		<li><a href="#">About</a></li>
+		<li><a href="#">Store</a></li>
+		<li><a href="#">Blog</a></li>
+	</ul>
+
+<h3>Step 4: Make all items the same width</h3>
+	<ul style="list-style-type: none;">
+		<li><a href="#" style="display: block; width: 150px">Home</a></li>
+		<li><a href="#">About</a></li>
+		<li><a href="#">Store</a></li>
+		<li><a href="#">Blog</a></li>
+	</ul>
+
+<h3>Step 5: Style</h3>
+	<ul class = "nav">
+		<li><a href="#">Home</a></li>
+		<li><a href="#">About</a></li>
+		<li><a href="#">Store</a></li>
+		<li><a href="#">Blog</a></li>
+	</ul>
+
+<h3>Bonus Step: Float Left</h3>
+	<ul class = "nav horizontal">
+		<li><a href="#">Home</a></li>
+		<li><a href="#">About</a></li>
+		<li><a href="#">Store</a></li>
+		<li><a href="#">Blog</a></li>
+	</ul>
+
+<br/><br/><br/>	
+</body>
+</html>

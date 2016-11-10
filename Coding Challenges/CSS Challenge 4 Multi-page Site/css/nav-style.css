@@ -1,0 +1,39 @@
+		.nav{
+			list-style-type: none;
+			width: 96%;
+			background-color: #FFAA00;
+		}
+
+		.nav:after{
+			display: table;
+			clear: both;
+			content: "";
+		}
+
+		.nav > li a{
+			display: block;
+			width: 100px;
+			background-color: #00B8B8;
+			color: #FFF;
+			font-size: 20px;
+			text-decoration: none;
+			text-align: center;
+			padding: 5px;
+		}
+
+		.nav > li a:hover{
+			display: block;
+			width: 100px;
+			background-color: #FFAA00;
+			color: #FFF;
+			font-size: 20px;
+		}
+
+		.horizontal > li a{
+			float: left;
+			background-color: #FFAA00;
+		}
+
+		.horizontal > li a:hover{
+			background-color: #FF0000;
+		}

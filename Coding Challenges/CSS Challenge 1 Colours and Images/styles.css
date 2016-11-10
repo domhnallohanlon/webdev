@@ -1,0 +1,38 @@
+	#example{
+		background-color:gray;
+	}
+	h1{
+		color: red;
+	}
+	h2, h3{
+		color: yellow;
+	}
+
+	h4, h5, h6{
+		color: #ffffff;
+	}
+
+	.attr{
+		color:lightgreen;
+	}
+
+	.bld{
+		font-weight: bold
+	}
+
+	.itl{
+		font-style: italic;
+	}
+
+	.obl{
+		font-style: oblique;
+	}
+	
+	a{
+		background-color: black;
+		color:orange;
+	}
+	a:hover{
+		background-color: orange;
+		color:black;
+	}

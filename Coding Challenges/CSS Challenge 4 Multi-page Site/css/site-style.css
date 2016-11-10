@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css?family=Codystar|Lato');
+
+h1, h2, h3, h4{
+	font-family: 'Codystar', cursive;
+}
+
+p, a{
+	font-family: 'Lato', sans-serif;
+}
+
+.banner{
+	width: 75%;
+	display: block;
+	margin: auto
+}
+
+.footer{
+	background-color: #FFAA00;
+	width: 96%;
+	min-height: 100px;
+	margin-top:64px;
+	padding:16px;
+}
+
+.footer > a{
+	color: inherit;
+}
+
+.footer > a:hover{
+	color: #FF0000;
+}
