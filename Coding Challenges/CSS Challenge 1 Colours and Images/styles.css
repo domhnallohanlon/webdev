@@ -1,11 +1,13 @@
 	#example{
-		background-color:gray;
+		background-color:white;
+		background-image: url('green_grad.png');
+		background-repeat: repeat-y;
 	}
 	h1{
-		color: red;
+		color: forestgreen;
 	}
 	h2, h3{
-		color: yellow;
+		color: lime;
 	}
 
 	h4, h5, h6{
